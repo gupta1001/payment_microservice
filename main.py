@@ -11,9 +11,9 @@ app = FastAPI()
 # since I am using free version this is fine
 # This could be a No SQL or Mongo DB database
 redis = get_redis_connection(
-    host="redis-11018.c9.us-east-1-4.ec2.cloud.redislabs.com",
-    port = 11018,
-    password = "r7e0O71D8foGqHMskzmlA879VGcDjXSh",
+    host="redis_hostname",
+    port = redis_port,
+    password = "password",
     decode_responses = True
 )
 
